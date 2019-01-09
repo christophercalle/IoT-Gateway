@@ -1,28 +1,36 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, Card, CardImg, CardText, CardBody,CardTitle, CardSubtitle, Button} from 'reactstrap';
+import { render } from "react-dom";
+import { faChartArea, faMap, faTachometerAlt, faCircleNotch } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Icons from '../src/components/icons';
+import Dropnav from '../src/components/dropnav';
+import {Chart1} from './components/chart1';
+import {Chart2} from './components/chart2';
+
+
 
 class App extends Component {
+  
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div>
+        <Dropnav />
+        {/* <Chart1 /> */}
+        {/* <Chart2 /> */}
+        {/* <Chart3 /> */}
+        {/* <Chart4 /> */}
+        <Icons />
       </div>
-    );
+    )
   }
 }
 
 export default App;
+
+
+
+
+
+
+
